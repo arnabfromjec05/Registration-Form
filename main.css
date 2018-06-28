@@ -1,0 +1,30 @@
+
+.ui.very.padded.text.container.segment.formtype{
+	width:30%;
+	margin: 50px auto;
+}
+
+.ui.very.padded.text.container.segment#home{
+	width:30%;
+	margin: 50px auto;
+	text-align: center;
+}
+
+#home #buttons{
+	margin:30px;
+}
+
+.ui.very.basic.collapsing.celled.table
+{
+	margin:20px auto;
+}
+
+table{
+	width:50%;
+	margin:20px auto;
+}
+
+table th{
+	background: cyan;
+}
+

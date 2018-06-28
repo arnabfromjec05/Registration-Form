@@ -1,0 +1,75 @@
+
+
+<% include partials/header %>
+
+<div class="ui raised very padded text container segment">
+	<center><h1>RV COLLEGE OF ENGINEERING</h1></center>
+<br>
+	<center><h4>USN : <%=student.usn.toUpperCase()%></h4><center>
+	<table class="ui compact very basic collapsing celled table" >
+		<tbody>
+			
+			<tr>
+				<td>Name</td>
+				<td><%=student.name%></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><%=student.gender%></td>
+			</tr>
+			<tr>
+				<td>Birthday</td>
+				<td><%=student.bday%></td>
+			</tr>
+			<tr>
+				<td>Father's name</td>
+				<td><%=student.fatherName%></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><%=student.addr%></td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td><%=student.city%></td>
+			</tr>
+			<tr>
+				<td>State</td>
+				<td><%=student.state%></td>
+			</tr>
+			<tr>
+				<td>E-Mail</td>
+				<td><%=student.email%></td>
+			</tr>
+			<tr>
+				<td>Phone no.</td>
+				<td><%=student.phone%></td>
+			</tr>
+			<tr>
+			<h4>
+				<td>Usn</td>
+				<td><%=student.usn%></td>
+			</h4>
+			</tr>
+			<tr>
+				<td>Branch</td>
+				<td><%=student.branch%></td>
+			</tr>
+			<tr>
+				<td>Semester</td>
+				<td><%=student.sem%></td>
+			</tr>
+			<tr>
+				<td>CGPA</td>
+				<td><%=student.cgpa%></td>
+			</tr>
+			<tr>
+				<td>Mode of Admission</td>
+				<td><%=student.admMode%></td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>
+
+<% include partials/footer %>

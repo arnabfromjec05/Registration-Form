@@ -1,0 +1,42 @@
+<% include partials/header %>
+
+<h1>Hello admin</h1>
+
+<a href="/home/admin/logout" class="ui red button">Logout</a>	
+<a href="/home/admin/register" class="ui primary button">Add New Admin</a>
+<center>
+	<form action="/student/search" method="post">
+		<div class="ui action input">
+		  <input type="text" placeholder="usn" name="usnsearch">
+		  <button class="ui button">Search</button>
+		</div>
+	</form>
+</center>
+
+<table class="ui compact blue celled table">
+<tr>
+	<th>Sno.</th>
+	<th>USN</th>
+	<th>Name</th>
+	<th>Semester</th>
+	<th>Dept</th>
+	<th>Adm. Mode</th>
+	<th>Show</th>
+</tr>
+<% var count=1 %>
+<% students.forEach(function(stud){ %>
+	
+	<tr>
+		<td><%=count++%></td>
+		<td><%=stud.usn %></td>
+		<td><%=stud.name %></td>
+		<td><%=stud.sem %></td>
+		<td><%=stud.branch %></td>
+		<td><%=stud.admMode %></td>
+		<td><a href="/student/<%=stud.usn%>">PDF</a></td>
+	</tr>
+
+<% }) %>
+</table>
+
+<% include partials/footer %>

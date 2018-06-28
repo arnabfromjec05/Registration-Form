@@ -1,0 +1,106 @@
+<% include partials/header %>
+
+
+<div class="ui raised very padded text container segment">
+<center><h1>Registration Form</h1></center>
+
+	<h3 class="ui dividing header">Personal Details</h3>
+	<form action="/home" method="post" class="ui form">
+		
+		<div class="two fields">
+			
+			<div class="field">
+				<label>First Name:</label>
+				<input type="text" name="firstName" >
+			</div>
+			
+			<div class="field">
+				<label>Last Name:</label>
+				<input type="text" name="lastName" >	
+			</div>
+		</div>
+		<div class="two fields">
+			
+			<div class="field">	
+				<label>Gender:</label>
+				Male <input type="radio" name="gender" value="Male" checked> Female <input type="radio" name="gender" value="Female"> Other <input type="radio" name="gender" value="Other">  
+			</div>
+			
+			<div class="field">
+				<label>Date of Birth:</label>
+				<input type="date" name="bday">
+			</div>
+		</div>
+
+		<div class="field">
+			<label>Father's name:</label>
+			<input type="text" name="fatherName">
+		</div>
+
+		<div class="field">
+			<label>Address:</label><input type="text" name="addr">
+		</div>
+		<div class="two fields">
+			<div class="field">
+				<label>City:</label><input type="text" name="city">
+			</div>
+			<div class="field">
+				<label>State:</label>
+					<select name="state" required>
+				        <option value="">State</option>
+				    <option value="KT">Karnataka</option>
+				    <option value="TN">Tamil Nadu</option>
+				    <option value="AP">A.P</option>
+				    <option value="KL">Kerela</option>  	  
+				    </select>
+			</div>
+		</div>
+
+		<div class="two fields">
+			<div class="field">
+				<label>Email:</label><input type="email" name="email" placeholder="abc@gmail.com">
+			</div>
+			<div class="field">
+				<label>Phone:</label><input type="number" name="phone" min="7000000000" max="9999999999">
+			</div>
+		</div>
+
+		<h3 class="ui dividing header">Academic Details</h3>
+
+		<div class="field">
+			<label>USN:</label> <input type="text" name="usn" required>
+		</div>
+
+		<div class="field">
+			<label>Branch :</label>
+			<select name="branch" required>
+				<option value="">branch</option>
+			    <option value="CSE">CSE</option>
+			    <option value="ISE">ISE</option>
+			    <option value="ECE">ECE</option>
+			    <option value="EEE">EEE</option>
+			    <option value="MECH">MECH</option>
+			    <option value="CVL">CVL</option>  
+			</select>
+		</div>
+		<div class="field">
+				<label>Semester :</label>
+				<input type="number" name="sem" min="1" max="8" required>
+		</div>
+
+		<div class="field">
+			<label>CGPA:</label> <input type="text" name="cgpa" >
+		</div>
+
+		<div class="field">
+			<label>Mode of Admission:</label> 
+			CET<input type="radio" name="admMode" value="CET" checked>
+			COMED-K<input type="radio" name="admMode" value="COMED-K">
+			MQ<input type="radio" name="admMode" value="MQ">
+		</div>	
+
+		<button>Submit</button>
+	</form>
+</div>
+
+<% include partials/footer %>
